@@ -35,4 +35,4 @@ Open a new PR to contribute
 
 ## License
 
-MIT
+GNU General Public License v3.0
