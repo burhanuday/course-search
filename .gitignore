@@ -12,6 +12,9 @@
 /build
 /dist
 
+# design folder
+/design
+
 # misc
 .DS_Store
 .env.local

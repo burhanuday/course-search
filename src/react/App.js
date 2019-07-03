@@ -1,33 +1,38 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { channels } from '../shared/constants';
-const { ipcRenderer } = window.require('electron');
-
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { channels } from "../shared/constants";
+import PageHeader from "./components/PageHeader/PageHeader";
+import Search from "./containers/Search/Search";
+const { ipcRenderer } = window.require("electron");
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      appName: '',
-      appVersion: '',
-    }
     ipcRenderer.send(channels.APP_INFO);
     ipcRenderer.on(channels.APP_INFO, (event, arg) => {
       ipcRenderer.removeAllListeners(channels.APP_INFO);
       const { appName, appVersion } = arg;
-      this.setState({ appName, appVersion });
     });
   }
 
+  state = {
+    source: "https://freecourselab.com/wp-json/wp/v2/posts"
+  };
+
+  setSource = value => {
+    console.log(value);
+
+    this.setState({
+      source: value
+    });
+  };
+
   render() {
-    const { appName, appVersion } = this.state;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>{appName} version {appVersion}</p>
-        </header>
+        <PageHeader setSource={this.setSource} />
+        <Search source={this.state.source} />
       </div>
     );
   }
