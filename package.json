@@ -2,6 +2,7 @@
   "name": "course-search",
   "version": "0.1.0",
   "productName": "Course Search",
+  "author": "Burhanuddin Udaipurwala <burhanuday>",
   "main": "electron/main.js",
   "private": true,
   "dependencies": {
@@ -16,6 +17,7 @@
   },
   "homepage": "./",
   "scripts": {
+    "postinstall": "electron-builder install-app-deps",
     "start": "react-scripts start",
     "start-electron": "cross-env ELECTRON_START_URL=http://localhost:3000 electron .",
     "clean": "shx rm -rf build dist",
@@ -26,6 +28,9 @@
     "eject": "react-scripts eject"
   },
   "build": {
+    "appId": "com.burhanuday.courseSearch",
+    "productName": "Course Search",
+    "copyright": "Copyright © 2019 burhanuday",
     "files": [
       "build/**/*",
       "node_modules/**/*"

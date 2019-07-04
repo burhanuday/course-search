@@ -11,11 +11,13 @@ Desktop application built with React and Electron to find courses from multiple 
 
 ## Compile Steps
 
-- Clone this repository
-- cd into the directory and run `npm install`
-- Run `npm run package` to compile react, copy files and then package your app
+```
+git clone https://github.com/burhanuday/course-search
+npm install
+npm run package
+```
 - A new `dist` folder will be created in the root of your project containing the executable files
-NOTE: add `--mac` to the `postpackage` script besides `--win` if you are on a mac computer
+- NOTE: add `--mac` to the `postpackage` script besides `--win` if you are on a mac computer
 
 ## Development
 
