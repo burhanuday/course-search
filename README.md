@@ -13,7 +13,8 @@
 
 Desktop application built with React and Electron to find courses from multiple sources available to download in torrent form
 
-Download - https://github.com/burhanuday/course-search/releases
+### Download
+https://github.com/burhanuday/course-search/releases
 
 ![Screenshot](/images/course_search_1.png)
 
@@ -22,7 +23,14 @@ Download - https://github.com/burhanuday/course-search/releases
 - `win`: Download compiled executable from releases tab
 - `mac`: Follow below steps to compile binary
 
-## Compile Steps
+### Changing Sources
+
+<p align="center">
+  <img src="./images/course_search_2.png" />
+</p>
+The source can be changed by picking a different website from the dropdown in the top right corner
+
+### Compile Steps
 
 ```
 git clone https://github.com/burhanuday/course-search
@@ -46,6 +54,7 @@ npm run package
 - `package.json`: Contains scripts for running the app in development, building it, and packaging it for production using electron-builder
 
 ## TODO
+
 - Make an icon for the project
 - Improve styling for the UI
 - Add new sources
