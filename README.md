@@ -1,8 +1,21 @@
+<p align="center">
+  <img src="./images/banner.png" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/issues/burhanuday/course-search.svg" />
+  <img src="https://img.shields.io/github/stars/burhanuday/course-search.svg" />
+  <img src="https://img.shields.io/github/license/burhanuday/course-search.svg" />
+  <img src="https://img.shields.io/twitter/url/https/github.com/burhanuday/course-search.svg?style=social" />
+</p>
+
 # Course Search
 
 Desktop application built with React and Electron to find courses from multiple sources available to download in torrent form
 
-![Screenshot](/screenshots/course_search_1.png)
+Download - https://github.com/burhanuday/course-search/releases
+
+![Screenshot](/images/course_search_1.png)
 
 ## Usage
 
@@ -16,6 +29,7 @@ git clone https://github.com/burhanuday/course-search
 npm install
 npm run package
 ```
+
 - A new `dist` folder will be created in the root of your project containing the executable files
 - NOTE: add `--mac` to the `postpackage` script besides `--win` if you are on a mac computer
 
@@ -33,7 +47,11 @@ npm run package
 
 ## Contributing
 
-Open a new PR to contribute
+Make a new PR to contribute
+
+## Boilerplate
+
+Taken from https://github.com/burhanuday/electron-react-boilerplate
 
 ## License
 
