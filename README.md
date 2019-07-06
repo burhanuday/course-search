@@ -45,6 +45,11 @@ npm run package
 - `src/shared/`: Code shared between React and Electron
 - `package.json`: Contains scripts for running the app in development, building it, and packaging it for production using electron-builder
 
+## TODO
+- Make an icon for the project
+- Improve styling for the UI
+- Add new sources
+
 ## Contributing
 
 Make a new PR to contribute
